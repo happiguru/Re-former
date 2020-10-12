@@ -1,0 +1,13 @@
+
+<div>
+    <div>
+        <ul>
+            <li><%= @user.username %></li>
+            <li>
+                <%= link_to 'Update Profile', edit_user_path(@user) %>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<h3><%= link_to 'All Users', users_path %> </h3>

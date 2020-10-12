@@ -1,0 +1,19 @@
+<header>
+    <h1>
+        Users List
+    </h1>
+</header>
+<div>
+    <% @user.each do |user| %>
+       
+        <div>
+            <ul>
+                <li><%= user.username %></li>
+                <li>
+                    <%= link_to 'Update Profile', edit_user_path(user) %>
+                </li>
+            </ul>
+        </div>
+    <% end %>
+</div>
+    
