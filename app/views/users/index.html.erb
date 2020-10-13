@@ -1,13 +1,13 @@
-<header>
+<header class="container">
     <h1>
         Users List
     </h1>
 </header>
-<div>
+<div class="container">
     <% @user.each do |user| %>
        
-        <div>
-            <ul>
+        <div class="row">
+            <ul class="col-4 border">
                 <li><%= user.username %></li>
                 <li>
                     <%= link_to 'Update Profile', edit_user_path(user) %>
